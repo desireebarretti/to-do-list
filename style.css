@@ -50,5 +50,5 @@ h2 {
 
 .btn__add:hover {
     background-color: chartreuse;
-    transition: .75s;
+    transition: 1.5s;
 }
