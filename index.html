@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <title>To Do</title>
+    <title>To Do List</title>
 </head>
 
 <body>
     <section>
         <header>
-            <h2>To Do List</h2>
+            <h2>To Do List | DRVB</h2>
         </header>
         <main>
-            <input type="text" name="" id="input__item" placeholder="Digite um item" class="input__item">
+            <input type="text" name="" id="input__item" placeholder="Digite um item" class="input__item" onclick="escrever()">
             <button class="btn__add" id="btn__add" onclick="adicionarItem()">+</button>
         </main>
         <div id="adicionado" ondblclick="duploCliqueChecado()">
+            <ul>
+                <li></li>
+            </ul>
             <!-- onde aparecerá os item da lista -->
         </div>
     </section>
