@@ -10,27 +10,35 @@ function adicionarItem() {
 
     if (addItem.value === '') {
         alert('Você precisa adicionar um item!')
+        // border vermelha quando errado
         addItem.style.border = '1px solid #fa3737b7'
         addItem.style.focus
 
     } else {
+        // incluindo item no array
         addLocalStorange.push(addItem.value)
 
-        console.log(addLocalStorange)
-
+        // setando no local storange
         localStorage.setItem(addLocalStorange, itensAdicionados)
 
-        // itensAdicionados.innerHTML = addItem.value  
-        // itensAdicionados.style.display = 'block'
-        // botaoCheck.style.display = 'block'
+        mostrarNaTela()
     }
     addItem.value = ''
 }
 
+// exclui item realizado
 function duploCliqueChecado() {
     itensAdicionados.style.display = 'none'
 }
 
 function escrever() {
     addItem.style.border = 'none'
+}
+
+function mostrarNaTela() {
+
+    for (let i = 0; i < addLocalStorange.length; i++) {
+        itensAdicionados.innerHTML = addLocalStorange
+        itensAdicionados.style.display = 'block'
+    }
 }
