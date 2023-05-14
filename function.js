@@ -2,6 +2,8 @@ let addItem = document.querySelector('#input__item')
 let botaoItem = document.querySelector('#btn__add')
 let itensAdicionados =  document.querySelector('#adicionado')
 let img = document.querySelector('#img')
+let botaoCheck = document.querySelector('#btn__check')
+
 
 function adicionarItem() {
    
@@ -11,8 +13,10 @@ function adicionarItem() {
         addItem.style.focus
 
     } else {
-        itensAdicionados.innerHTML = addItem.value  
-        itensAdicionados.style.display = 'block'
+        
+        // itensAdicionados.innerHTML = addItem.value  
+        // itensAdicionados.style.display = 'block'
+        // botaoCheck.style.display = 'block'
     }
     addItem.value = ''
 }
