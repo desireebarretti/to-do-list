@@ -1,8 +1,6 @@
 let addItem = document.querySelector('#input__item')
 let botaoItem = document.querySelector('#btn__add')
 let itensAdicionados = document.querySelector('#adicionado')
-let img = document.querySelector('#img')
-let botaoCheck = document.querySelector('#btn__check')
 
 const addLocalStorange = []
 
@@ -23,11 +21,18 @@ function adicionarItem() {
 
         mostrarNaTela()
     }
+    
+    // limpando o input
     addItem.value = ''
 }
 
 // exclui item realizado
 function duploCliqueChecado() {
+
+    // excluindo os itens da local
+    localStorage.removeItem(addLocalStorange, itensAdicionados)
+
+    // limpando a página
     itensAdicionados.style.display = 'none'
 }
 
@@ -38,7 +43,9 @@ function escrever() {
 function mostrarNaTela() {
 
     for (let i = 0; i < addLocalStorange.length; i++) {
+
         itensAdicionados.innerHTML = addLocalStorange
+
         itensAdicionados.style.display = 'block'
     }
 }
