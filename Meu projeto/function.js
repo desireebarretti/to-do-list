@@ -10,7 +10,7 @@ function adicionarItem() {
         alert('Você precisa adicionar um item!')
         // border vermelha quando errado
         addItem.style.border = '1px solid #fa3737b7'
-        addItem.style.focus
+        
 
     } else {
         // incluindo item no array
@@ -42,9 +42,15 @@ function escrever() {
 
 function mostrarNaTela() {
 
+    let valores = JSON.parse(localStorage.getItem(addItem))
+
+    let criarLi = document.createElement('li')
+
     for (let i = 0; i < addLocalStorange.length; i++) {
 
-        itensAdicionados.innerHTML = addLocalStorange
+        console.log(criarLi)
+
+        // itensAdicionados.innerHTML = addLocalStorange
 
         itensAdicionados.style.display = 'block'
     }
