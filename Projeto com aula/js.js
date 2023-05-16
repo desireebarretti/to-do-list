@@ -1,6 +1,6 @@
 // nome da chave
-
 const localStorageKey = 'to-do-list'
+
 let list = document.querySelector('#adicionado')
 
 function novaTarefa() {
