@@ -9,7 +9,7 @@ function novaTarefa() {
     if(!input.value){
         alert('Você precisa digitar algo!')
         input.style.border = '1px solid #fa3737b7'
-
+        
     } else {
         input.style.border = 'none'
         let values = JSON.parse(localStorage.getItem(localStorageKey) || '[]')
@@ -22,7 +22,6 @@ function novaTarefa() {
         localStorage.setItem(localStorageKey, JSON.stringify(values))
 
         mostrarValores()
-
     }
     input.value = ''
 }
@@ -44,14 +43,13 @@ function mostrarValores() {
 function remover(data) {
 
     let values = JSON.parse(localStorage.getItem(localStorageKey) || '[]')
-    let index = values.findIndex(x => x.name == data)
 
-    values.splice(index)
+    let index = values.findIndex(x => x.name == data)
+    values.splice(index,1)
     localStorage.setItem(localStorageKey, JSON.stringify(values))
 
     mostrarValores()
-    
-    console.log(data)
 }
+
 
 mostrarValores()
