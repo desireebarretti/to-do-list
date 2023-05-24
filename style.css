@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --back-preto: #000000f2;
+    --branco: #dfdfdff3;
+    --verde-lima: #8acc27;
+}
+
+.corpo {
+    background-color: var(--back-preto);
+    margin: auto;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    color: var(--branco);
+}
+
+.input {
+    align-items: center;
+}
+
+.botao {
+    background-color: var(--verde-lima);
+    font-size: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--branco);
+}
