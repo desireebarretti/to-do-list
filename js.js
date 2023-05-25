@@ -9,10 +9,6 @@ function novaTarefa() {
     paragrafo.innerHTML = input.value
 }
 
-function tarefaChecada() {
-    paragrafo.style.
-}
-
 function limparTarefa() {
     itensAdd.style.display = 'none'
 }
