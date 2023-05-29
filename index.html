@@ -19,13 +19,14 @@
             <input type="text" id="input" class="input" placeholder="Digite um item">
             <button class="botao" id="botao" onclick="novaTarefa()">+</button>
         </main>
-        <section id="itens">
-           <!-- onde aparecerá os item da lista -->
-            <label for="partes-item" id="partes-item">
-                <p class="paragrafo" id="paragrafo">Reunião</p>
-                <button class="botaoX" id="botaoX" onclick="limparTarefa()">x</button>
-            </label>
-        </section>
+        
+        <ul id="itens" ondblclick="limparTarefa()">
+            <li>
+                <label for="partes-item" id="partes-item">
+                    <p class="paragrafo" id="paragrafo">Reunião</p>
+                </label>
+            </li>
+        </ul>
     </section>
 
     <script src="./js.js"></script>

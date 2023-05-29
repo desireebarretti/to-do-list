@@ -49,8 +49,7 @@ main {
     outline: 2px solid var(--verde-lima-detalhes);
 }
 
-.botao,
-.botaoX {
+.botao {
     background-color: var(--verde-lima);
     font-size: 20px;
     width: 30px;
@@ -60,8 +59,7 @@ main {
     color: var(--branco);
 }
 
-.botao:hover,
-.botaoX:hover {
+.botao:hover {
     background-color: var(--verde-lima-detalhes);
     outline: 2px solid var(--verde-lima);
 }
@@ -71,29 +69,16 @@ main {
     color: var(--branco);
     background-color: var(--cinza);
     justify-content: space-around;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px var(--cinza);
+    border-radius: 5px;
     width: 50%;
     padding: 5px;
     margin: auto;
 }
 
 #partes-item {
-    display: none;
+    display: flex;
     justify-content: space-between;
     width: 80%;
-}
-
-.botaoX {
-    width: 32px;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.checkbox {
-    width: 20px;
-    border-radius: 50%;
-    cursor: pointer;
 }
 
 .paragrafo {

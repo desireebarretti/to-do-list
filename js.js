@@ -1,14 +1,18 @@
 let input = document.querySelector('#input')
-let itensAdd = document.querySelector('#itens')
-let todasPartesItem = document.querySelector('#partes-item')
-let paragrafo = document.querySelector('#paragrafo')
+let addItens = document.querySelector('#itens')
+
 
 function novaTarefa() {
-    itensAdd.style.display = 'flex'
-    todasPartesItem.style.display = 'flex'
-    paragrafo.innerHTML = input.value
+    if(input.value == ''){
+        alert('Digite algo')
+        input.style.border = '1px solid red'
+    } else {
+        addItens.style.display = 'flex'
+        addItens.innerHTML = input.value
+    }
+    
 }
 
 function limparTarefa() {
-    itensAdd.style.display = 'none'
+    alert('reset')
 }
