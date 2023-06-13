@@ -4,23 +4,30 @@ let addItens = document.querySelector('#itens')
 let itens = []
 
 function novaTarefa(evento) {
+
     if (input.value == '') {
+        // em caso de não ter digitado um item
         alert('Digite um item')
         input.style.border = '1px solid red'
+
     } else {
+        // caso tenha digitado um item
         input.style.border = 'none'
         addItens.style.display = 'flex'
-        addItens.innerHTML = input.value
 
         itens.push(input.value)
-        console.log(itens)
+        addItens.innerHTML = itens 
 
-        // for (let i = 0; i < itens.length; i++) {
-        //     let criarLi = document.createElement('li')
-        //     addItens.appendChild =
-        //     criarLi = valorInput
-        //     console.log(criarLi)
-        // }
+        for (let i = 0; i < itens.length; i = i+itens) {
+            console.log(itens)
+
+            // criando uma lista com classe, e conteudo
+            let criarItemLista = document.createElement("li")
+            criarItemLista.classList = 'itens'
+            criarItemLista.textContent = `${itens}`
+
+            console.log(criarItemLista)
+        }
 
     }
     input.value = ''

@@ -68,7 +68,8 @@ main {
     outline: 2px solid var(--verde-lima);
 }
 
-#itens {
+#itens,
+.itens {
     display: none;
     color: var(--branco);
     background-color: var(--cinza);
